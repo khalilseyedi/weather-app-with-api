@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+<!-- error message -->
+        <div class="error-message"></div>
+        <h1>Weather Forecast</h1>
+<!-- form -->
+        <form id="form">
+            <input type="text" placeholder="Enter City ..." id="input">
+            <button type="submit" id="btn">Search</button>
+        </form>
+<!-- loading -->
+        <div class="loading">Loading...</div>
+<!-- card weather -->
+        <section id="weather-card">
+            <div class="title-city">
+                <span id="cityName">Tehran</span>
+            </div>
+            <img id="weatherIcon" alt="WeatherIcon">
+            <div class="degree">
+                <p class="temperature"></p>
+                <p>Feels like <span class="feelsLike"></span></p>
+                <p id="weatherStatus"></p>
+            </div>
+            <div class="details">
+                <p class="rainy">
+                    <i class="fa-solid fa-droplet" style="color: rgb(116, 192, 252);"></i>
+                    <span id="humidity"></span>
+                </p>
+                <p class="wind-speed">
+                    <i class="fa-solid fa-wind"></i>
+                    <span id="windSpeed"></span>
+                </p>
+            </div>
+            <div class="container-forecastDays">
+                <div class="title-days">
+                    <p>3-Day Forecast</p>
+                </div>
+            </div>
+        </section>
+    </div>
+<script src="js/index.js"></script>
+<script src="js/all.min.js"></script>
+<script src="js/jquery-3.7.1.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,232 @@
+@font-face {
+    font-family: 'poppins';
+    src:
+    url("../fonts/Poppins-Medium.ttf") format('truetype'),
+    url("../fonts/Poppins-Medium.woff2") format('woff2'),
+    url("../fonts/Poppins-Light.ttf") format('truetype');
+    url("../fonts/Poppins-Thin.ttf") format('truetype');
+}
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+body {
+    font-family: poppins, serif;
+    direction: ltr;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e9f0ff;
+}
+.container{
+    width: 100%;
+    max-width: 280px;
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+}
+.error-message{
+    width: 100%;
+    max-width: 280px;
+    padding: 10px;
+    text-align: center;
+    background-color: crimson;
+    color: white;
+    border-radius: 8px;
+    transform: translateY(-140px);
+    transition: all 0.3s ease-in-out;
+}
+h1{
+    width: 100%;
+    font-family: poppins, serif;
+    font-size: 1.5rem;
+    color: gray;
+    margin-bottom: 20px;
+    text-align: center;
+}
+form{
+    width: 100%;
+    max-width: 280px;
+    display: flex;
+    align-items: stretch;
+    margin-bottom: 20px;
+}
+form input {
+    flex: 1;
+    border: 2px solid transparent;
+    border-radius: 10px 0 0 10px;
+    padding: 12px 15px;
+    min-width: 0;
+}
+form input:focus{
+    outline: none;
+    border-color: #3636da;
+}
+form input[placeholder] {
+    font-size: 0.9rem;
+    font-family: poppins, serif;
+}
+.loading{
+    display: none;
+    font-size: 16px;
+    font-family: poppins, serif;
+    font-weight: bold;
+    color: #3636da;
+    margin-bottom: 10px;
+}
+button{
+    padding: 0 15px;
+    border: none;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+    background-color: #3636da;
+    color: white;
+    font-family: poppins, serif;
+    font-size: 14px;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+section{
+    width: 100%;
+    max-width: 280px;
+    min-height: 400px;
+    height: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    flex-direction: column;
+}
+.title-city span{
+    font-size: 1rem;
+    color: white;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.8);
+}
+
+.degree{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.degree p:first-child{
+    font-size: 2.2rem;
+    color: white;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.8);
+}
+.degree p:nth-child(2){
+    font-size: 0.9rem;
+    color: #eae4e4;
+    margin-bottom: 5px;
+}
+.degree p:last-child{
+    font-size: 0.9rem;
+    color: #eae4e4;
+}
+.details {
+    border-top: 2px solid #e8dede;
+    border-bottom: 1px solid #d8d0d0;
+    width: 230px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.rainy{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rainy .fa-droplet{
+    font-size: 12px;
+}
+.rainy span{
+    font-size: 12px;
+    display: block;
+    color: white;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.8);
+}
+
+.wind-speed .fa-wind{
+    font-size: 0.8rem;
+    color: white;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.8);
+}
+.wind-speed span{
+    font-size: 0.8rem;
+    color: white;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.8);
+}
+.container-forecastDays{
+    width: 80%;
+}
+.title-days p{
+    font-size: 0.9rem;
+    color: white;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.8);
+    text-align: center;
+    margin-bottom: 5px;
+}
+div.degree-avg{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.day{
+    font-size: 0.8rem;
+    color: white;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.8);
+    width: 20px;
+    text-align: center;
+}
+.group-degree{
+   display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.group-degree span:first-child{
+    font-size: 0.8rem;
+    color: white;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+}
+.group-degree span:last-child{
+    font-size: 0.8rem;
+    color: #cfc1c1;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.8);
+}
+.status{
+    width: 30px;
+    text-align: center;
+}
+.status img{
+    width: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
