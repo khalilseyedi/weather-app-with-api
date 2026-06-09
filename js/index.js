@@ -24,7 +24,7 @@ form.addEventListener('submit', (e) => {
 });
 // fetch display current weather
 async function fetchWeatherFromApi(city) {
-const apiUrl = `https://api.weatherapi.com/v1/current.json?key=35e2ae66779741ab90294736260306&q=${city}`
+const apiUrl = `https://api.weatherapi.com/v1/current.json?key=[KEY-API]&q=${city}`
     try {
         const response = await fetch(apiUrl);
         const data = await response.json();
@@ -67,7 +67,7 @@ fetchWeatherFromApi('Tehran');
 
 // fetch 3-days
 async function fetchDaysFromApi(city) {
-    const apiUrl = `https://api.weatherapi.com/v1/forecast.json?key=35e2ae66779741ab90294736260306&q=${city}&days=3`;
+    const apiUrl = `https://api.weatherapi.com/v1/forecast.json?key=[KEY-API]&q=${city}&days=3`;
     try {
         const response = await fetch(apiUrl);
         const data = await response.json();
